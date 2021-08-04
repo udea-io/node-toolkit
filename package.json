@@ -5,12 +5,13 @@
   "scripts": {
     "prepare": "husky install && lerna bootstrap --hoist",
     "reinstall": "lerna clean --yes && npm run prepare",
-    "test": "lerna run test --stream --ignore @10up/component-accordion",
+    "test": "lerna run test --stream",
     "clean": "lerna clean"
   },
   "lint-staged": {
     "*.js": [
-      "eslint"
+      "prettier --write",
+      "eslint --cache --fix --max-warnings=0"
     ]
   },
   "repository": {
