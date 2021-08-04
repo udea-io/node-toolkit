@@ -1,6 +1,6 @@
 {
   "name": "@udea-io/node-toolkit",
-  "private": true,
+  "private": false,
   "author": "Kent <iamcxa@gmail.com>",
   "scripts": {
     "prepare": "husky install && lerna bootstrap --hoist",
