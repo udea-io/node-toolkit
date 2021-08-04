@@ -1,0 +1,30 @@
+{
+  "name": "@udea-io/node-toolkit",
+  "private": true,
+  "author": "Kent <iamcxa@gmail.com>",
+  "scripts": {
+    "prepare": "husky install && lerna bootstrap --hoist",
+    "reinstall": "lerna clean --yes && npm run prepare",
+    "test": "lerna run test --stream --ignore @10up/component-accordion",
+    "clean": "lerna clean"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udea-io/node-toolkit.git"
+  },
+  "bundleDependencies": false,
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6.9"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "command": {
+    "version": ["develop"]
+  },
+  "ignoreChanges": [
+    "**/CHANGELOG.md",
+    "**/node_modules/**",
+    "**/package.json",
+    "**/*.md"
+  ]
+}
