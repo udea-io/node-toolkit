@@ -1,18 +1,15 @@
 module.exports = {
 	parser: '@babel/eslint-parser',
 	parserOptions: {
+		ecmaVersion: 8,
 		ecmaFeatures: {
 			jsx: true,
+			modules: true,
 		},
+		sourceType: 'module',
+		useJSXTextNode: false,
 	},
-	extends: [
-		'airbnb',
-		'airbnb/hooks',
-		'./index',
-		'prettier',
-		'prettier/react',
-		'plugin:prettier/recommended',
-	],
+	extends: ['airbnb', 'airbnb/hooks', './index', 'prettier', 'plugin:prettier/recommended'],
 	rules: {
 		'react/jsx-filename-extension': 0,
 		'react/forbid-prop-types': [

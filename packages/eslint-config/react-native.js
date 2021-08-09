@@ -1,5 +1,11 @@
 module.exports = {
-	extends: ['./index', './react', '@react-native-community', 'plugin:react-native/all'],
+	extends: [
+		'./index',
+		'./react',
+		'@react-native-community',
+		'plugin:react-native/all',
+		'plugin:prettier/recommended',
+	],
 
 	env: {
 		'react-native/react-native': true,
