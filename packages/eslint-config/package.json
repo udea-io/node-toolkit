@@ -26,6 +26,7 @@
     "url": "https://github.com/udea-io/node-toolkit/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
