@@ -5,32 +5,39 @@
   "author": "Kent <iamcxa@gmail.com>",
   "homepage": "https://github.com/udea-io/node-toolkit#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "directories": {
-    "lib": "lib",
-    "alert": "alert",
+    "src": "src",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib",
-    "alert"
+    "dist",
+    "src"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/udea-io/node-toolkit.git"
   },
   "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/udea-io/node-toolkit/issues"
   },
   "dependencies": {
-    "@udea-io/eslint-config": "^0.1.6",
     "axios": "^0.21.1"
   },
   "peerDependencies": {
     "lodash": "^4.17.21"
   },
-  "gitHead": "bcfebee57b9d4005881634245a7a623c707ac0a3"
+  "gitHead": "bcfebee57b9d4005881634245a7a623c707ac0a3",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-export-default-from": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "@udea-io/eslint-config": "^0.1.6"
+  }
 }
