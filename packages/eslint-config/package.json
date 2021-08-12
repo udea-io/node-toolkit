@@ -1,6 +1,6 @@
 {
   "name": "@udea-io/eslint-config",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A shareable ESLint configuration",
   "keywords": [
     "eslint",
@@ -44,6 +44,7 @@
   "peerDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/eslint-parser": "^7.14.9",
+    "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -51,7 +52,6 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsdoc": "^36.0.6",
     "eslint-plugin-prettier": "^3.4.0",
-    "babel-plugin-root-import": "^6.6.0",
     "prettier": "2.3.2"
   },
   "gitHead": "ce4b67c3d530c46b9618d3d500a324fdbee613c9",

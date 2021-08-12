@@ -1,6 +1,6 @@
 {
   "name": "@udea-io/axios-wrapper",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Api handler based on axios for React/React-Native apps.",
   "author": "Kent <iamcxa@gmail.com>",
   "homepage": "https://github.com/udea-io/node-toolkit#readme",
@@ -26,7 +26,7 @@
     "url": "https://github.com/udea-io/node-toolkit/issues"
   },
   "dependencies": {
-    "@udea-io/eslint-config": "^0.1.5",
+    "@udea-io/eslint-config": "^0.1.6",
     "axios": "^0.21.1"
   },
   "peerDependencies": {
