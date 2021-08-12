@@ -5,7 +5,7 @@
   "author": "Kent <iamcxa@gmail.com>",
   "homepage": "https://github.com/udea-io/node-toolkit#readme",
   "license": "ISC",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "alert": "alert",
@@ -31,5 +31,6 @@
   },
   "peerDependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "gitHead": "bcfebee57b9d4005881634245a7a623c707ac0a3"
 }
