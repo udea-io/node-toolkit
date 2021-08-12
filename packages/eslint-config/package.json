@@ -26,14 +26,14 @@
     "url": "https://github.com/udea-io/node-toolkit/issues"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.9",
+    "@babel/eslint-parser": "^7.15.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsdoc": "^36.0.6",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -42,15 +42,15 @@
     "prettier": "2.3.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/eslint-parser": "^7.14.9",
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
     "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsdoc": "^36.0.6",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "2.3.2"
   },
