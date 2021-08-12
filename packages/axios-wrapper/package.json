@@ -1,6 +1,6 @@
 {
   "name": "@udea-io/axios-wrapper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Api handler based on axios for React/React-Native apps.",
   "author": "Kent <iamcxa@gmail.com>",
   "homepage": "https://github.com/udea-io/node-toolkit#readme",
