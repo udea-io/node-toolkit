@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    // require.resolve('./packages/eslint-config/index'),
-    // require.resolve('./packages/eslint-config/mocha'),
+    require.resolve('./packages/eslint-config/index'),
+    require.resolve('./packages/eslint-config/mocha'),
   ],
   rules: {
     'import/no-dynamic-require': [0],
