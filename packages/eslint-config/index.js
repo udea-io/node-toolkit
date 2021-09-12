@@ -2,6 +2,7 @@ module.exports = {
   parser: '@babel/eslint-parser',
 
   parserOptions: {
+    sourceType: 'module',
     requireConfigFile: false,
     ecmaVersion: 8,
   },
@@ -11,7 +12,7 @@ module.exports = {
     es6: true,
   },
 
-  plugins: ['jsdoc', 'prettier'],
+  plugins: ['simple-import-sort', 'import', 'jsdoc', 'prettier'],
 
   extends: [
     'airbnb-base',
@@ -70,5 +71,20 @@ module.exports = {
         peerDependencies: true,
       },
     ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
   },
+  overrides: [
+    {
+      files: 'server/**/*.js',
+      env: { node: true },
+      rules: {
+        'simple-import-sort/imports': 'off',
+        'import/order': ['error', { 'newlines-between': 'always' }],
+      },
+    },
+  ],
 };
