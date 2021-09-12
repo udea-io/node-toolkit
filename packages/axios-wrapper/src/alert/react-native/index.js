@@ -1,7 +1,7 @@
-export ApiExceptionAlert from './ApiExceptionAlert';
-export ServiceUnavailableAlert from './ServiceUnavailableAlert';
+import ApiExceptionAlert from './ApiExceptionAlert';
+import ServiceUnavailableAlert from './ServiceUnavailableAlert';
 
-export {
+export default {
   ApiExceptionAlert,
   ServiceUnavailableAlert,
-}
+};

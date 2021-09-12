@@ -1,5 +1,5 @@
-import { Alert } from 'react-native';
 import { get } from 'lodash';
+import { Alert } from 'react-native';
 
 export default (
     text = {

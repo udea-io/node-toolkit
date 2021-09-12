@@ -1,6 +1,5 @@
-import { Alert } from 'react-native';
-import axios from 'axios';
 import NetInfo from '@react-native-community/netinfo';
+import { Alert } from 'react-native';
 
 export default (
     text = {
@@ -34,7 +33,7 @@ export default (
                 {
                   text: text.btnOk,
                   onPress: () => {
-                    callback && callback();
+                    if (typeof callback === 'function') callback(networkState);
                   },
                   style: 'cancel',
                 },
