@@ -34,8 +34,8 @@
     "@react-native-community/netinfo": "*",
     "lodash": "^4.17.21",
     "react-native": "*",
-    "redux": "*",
     "react-native-console-time-polyfill": "^1.2.3",
+    "redux": "*",
     "remote-redux-devtools": "^0.5.16"
   },
   "gitHead": "bcfebee57b9d4005881634245a7a623c707ac0a3",
@@ -44,6 +44,7 @@
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
     "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.16.5",
     "@udea-io/eslint-config": "^0.1.8"
   }
 }
