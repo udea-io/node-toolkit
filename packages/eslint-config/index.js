@@ -77,6 +77,7 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
   },
+
   overrides: [
     {
       files: 'server/**/*.js',
