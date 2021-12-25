@@ -7,10 +7,6 @@ const Runtime = async (
   url,
   method,
   options = {
-    // default handlers
-    defaultSuccessHandler: undefined,
-    defaultErrorHandler: undefined,
-
     // handlers
     successHandler: undefined,
     errorHandler: undefined,
@@ -142,7 +138,8 @@ const Runtime = async (
     }
     const errorHandler = get(options, 'errorHandler');
     if (typeof errorHandler === 'function') {
-      await errorHandler(errorObject);
+      const isCanceled = axios.isCancel(err);
+      await errorHandler(errorObject, isCanceled, global.canceler);
     }
     // throw error in the end
     throw errorObject;

@@ -34,7 +34,9 @@
     "@react-native-community/netinfo": "*",
     "lodash": "^4.17.21",
     "react-native": "*",
-    "react-native-console-time-polyfill": "1.2.3"
+    "redux": "*",
+    "react-native-console-time-polyfill": "^1.2.3",
+    "remote-redux-devtools": "^0.5.16"
   },
   "gitHead": "bcfebee57b9d4005881634245a7a623c707ac0a3",
   "devDependencies": {
