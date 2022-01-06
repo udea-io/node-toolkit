@@ -41,7 +41,7 @@ module.exports = {
 Extends `@udea-io/eslint-config` adding specific rules to React.
 
 ```sh
-npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-import-resolver-babel-plugin-root-import
 ```
 
 ```js
@@ -56,7 +56,7 @@ module.exports = {
 Extends `@udea-io/eslint-config` adding specific rules to React Native.
 
 ```sh
-npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks @react-native-community/eslint-config @react-native-community/eslint-plugin eslint-plugin-react-native
+npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks @react-native-community/eslint-config @react-native-community/eslint-plugin eslint-plugin-react-native babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import  
 ```
 
 ```js
