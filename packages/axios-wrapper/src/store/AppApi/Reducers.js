@@ -11,18 +11,15 @@ import { INITIAL_STATE } from './InitialState';
 
 export const onApiFetching = (state, { config, method, url, options }) => ({
   ...state,
-  ...config,
-  // method,
-  // url,
-  // options,
-  result: null,
+  request: config,
+  response: null,
   error: null,
   isFetching: true,
 });
 
 export const onApiFetchSuccess = (state, { data }) => ({
   ...state,
-  ...data,
+  response: data,
   error: null,
   isFetching: false,
 });
@@ -30,7 +27,7 @@ export const onApiFetchSuccess = (state, { data }) => ({
 export const onApiFetchFailure = (state, { error }) => ({
   ...state,
   error,
-  result: null,
+  response: null,
   isFetching: false,
 });
 

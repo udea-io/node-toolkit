@@ -1,5 +1,3 @@
-import 'react-native-console-time-polyfill';
-
 import axios from 'axios';
 import { get, isNil } from 'lodash';
 
