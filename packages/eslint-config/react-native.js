@@ -3,6 +3,7 @@ module.exports = {
     './index',
     './react',
     '@react-native-community',
+    'plugin:react/recommended',
     'plugin:react-native/all',
     'plugin:prettier/recommended',
   ],

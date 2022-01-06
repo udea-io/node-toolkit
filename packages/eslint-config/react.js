@@ -10,9 +10,11 @@ module.exports = {
   },
 
   extends: [
+    'airbnb',
     './index',
     'airbnb/hooks',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
   ],
 
   settings: {
