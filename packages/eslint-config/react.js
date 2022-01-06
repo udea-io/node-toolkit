@@ -57,15 +57,6 @@ module.exports = {
       },
     ],
 
-    // prefer arrow functions for defining components
-    'no-unused-var': [
-      1,
-      {
-        ign: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
-    ],
-
     'react/jsx-uses-react': 0,
 
     'react/react-in-jsx-scope': 0,
