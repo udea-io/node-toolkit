@@ -3,4 +3,5 @@ examples
 dist
 .vscode
 packages/**/package-lock.json
+packages/**/yarn.lock
 lerna-debug.log
