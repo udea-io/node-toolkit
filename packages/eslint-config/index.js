@@ -76,7 +76,7 @@ module.exports = {
 
   overrides: [
     {
-      files: 'server/**/*.js',
+      files: 'api/**/*.js',
       env: { node: true },
       rules: {
         'simple-import-sort/imports': 'off',
