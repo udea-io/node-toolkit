@@ -21,18 +21,10 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
-console.log(
-    'reducers=>', reducers
-)
-
 // Create the store
 const store = createStore(
   combineReducers(reducers),
   composeEnhancers(applyMiddleware(...middleware)),
 );
-
-console.log(
-    'store=>', store
-)
 
 export default store;
