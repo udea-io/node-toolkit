@@ -1,10 +1,10 @@
-// eslint-disable-next-line import/no-import-module-exports
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 
-const reducers = require('./Reducers');
+import reducers from './Reducers';
 
 // Add middleware here
 const middleware = [];
+
 // Debug tool integration;
 let composeEnhancers = compose;
 
@@ -21,18 +21,18 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
+console.log(
+    'reducers=>', reducers
+)
+
 // Create the store
 const store = createStore(
   combineReducers(reducers),
   composeEnhancers(applyMiddleware(...middleware)),
 );
 
-// Enable hot module replacement for reducers
-if (module.hot) {
-  module.hot.accept(async () => {
-    const nextRootReducer = await import('./Reducers');
-    store.replaceReducer(nextRootReducer);
-  });
-}
+console.log(
+    'store=>', store
+)
 
 export default store;
